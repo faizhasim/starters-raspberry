@@ -1,8 +1,9 @@
-# sudo apt-get -y update && sudo apt-get -y upgrade
+sudo add-apt-repository ppa:gnome-terminator
+sudo apt-get -y update && sudo apt-get -y upgrade
 
-sudo apt-get install zsh vim -y
+sudo apt-get install zsh vim terminator fonts-powerline tmux -y
 
-chsh -s /bin/zsh
+chsh -s "$(command -v zsh)"
 
 cp ./zshrc.sh ~/.zshrc
 
